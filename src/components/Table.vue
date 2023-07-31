@@ -26,7 +26,7 @@
 			<tbody>
 				<tr
 					v-for="(patient, i) in patients"
-					@click="$emit('patient', patient._id)"
+					@click="$emit('patient', patient)"
 					:key="patient._id">
 					<td>{{ i + 1 }}</td>
 					<td class="arabic">{{ patient.Name }}</td>

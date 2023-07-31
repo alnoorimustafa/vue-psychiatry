@@ -18,7 +18,7 @@ export default {
 	data() {
 		return {
 			tab: "sign",
-			obj: {},
+			currentPatient: {},
 			doctor: null,
 			image: "",
 		};
@@ -31,7 +31,8 @@ export default {
 			this.tab = tab;
 		},
 		edit(patientId) {
-			console.log(patientId);
+			this.currentPatient = patientId;
+			this.tab = "edit";
 		},
 
 		logout() {
@@ -95,7 +96,7 @@ export default {
 				<Table v-if="tab === 'patients'" @patient="edit" />
 				<EditPatient
 					:doctorId="doctor.id"
-					:patient="obj"
+					:patient="currentPatient"
 					v-if="tab === 'edit'"
 					@close="tab = 'patients'" />
 				<keep-alive>

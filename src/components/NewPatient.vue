@@ -5,7 +5,7 @@ export default {
 	inject: ["mongo"],
 	data() {
 		return {
-			genderbtns: ["male", "female"],
+			genderbtns: ["Male", "Female"],
 			residencybtns: [],
 			maritalbtns: [],
 			educationbtns: [],
