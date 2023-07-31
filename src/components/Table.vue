@@ -51,12 +51,16 @@ export default {
 	},
 	methods: {
 		async getPatients() {
-			const collection = await this.mongo
-				.db("psychiatry-db")
-				.collection("patients");
-			const res = await collection.find();
-			if (res) {
-				this.patients = res;
+			try {
+				const collection = await this.mongo
+					.db("psychiatry-db")
+					.collection("patients");
+				const res = await collection.find();
+				if (res) {
+					this.patients = res;
+				}
+			} catch {
+				console.log(err);
 			}
 		},
 		async search() {

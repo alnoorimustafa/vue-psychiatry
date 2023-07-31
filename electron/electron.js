@@ -10,27 +10,17 @@ function createWindow() {
 		width: 800,
 		height: 600,
 		autoHideMenuBar: true,
-		webPreferences: {
-			preload: path.join(__dirname, "preload.js"),
-			nodeIntegration: true,
-		},
+		// webPreferences: {
+		// 	preload: path.join(__dirname, "preload.js"),
+		// 	nodeIntegration: true,
+		// },
 	});
 
-	// and load the index.html of the app.
-	// win.loadFile("index.html");
 	mainWindow.loadURL(
-		url.format({
-			pathname: path.join(__dirname, "dist", "index.html"),
-			protocol: "file:",
-			slashes: true,
-		})
+		isDev
+			? "http://localhost:3000"
+			: `file://${path.join(__dirname, "../dist/index.html")}`
 	);
-	// mainWindow.loadURL(
-	//   isDev
-	//     ? "http://localhost:3000"
-	//     : `file://${path.join(__dirname, "../dist/index.html")}`
-	// );
-	// Open the DevTools.
 	if (isDev) {
 		mainWindow.webContents.openDevTools();
 	}

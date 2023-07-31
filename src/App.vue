@@ -12,7 +12,7 @@ const {
 	BSON: { ObjectId },
 } = Realm;
 const app = new Realm.App({ id: "psychiatry-app-jkwtz" });
-const mongo = app.currentUser.mongoClient("mongodb-atlas");
+const mongo = app.currentUser?.mongoClient("mongodb-atlas");
 
 export default {
 	data() {

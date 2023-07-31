@@ -82,7 +82,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -97,7 +97,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -112,7 +112,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -127,7 +127,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -142,7 +142,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -157,7 +157,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -172,7 +172,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -193,7 +193,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -208,7 +208,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -223,7 +223,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -238,7 +238,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -253,7 +253,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -268,7 +268,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -283,7 +283,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -298,7 +298,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
@@ -313,7 +313,7 @@ export default {
 						return new Date(a.date) - new Date(b.date);
 				  });
 			return tt.map((el) => {
-				return `(${el.doctor.slice(0, 4)} @ ${new Date(
+				return `(${el.doctor.slice(8, 12)} @ ${new Date(
 					el.date
 				).toLocaleDateString("en-GB")}) : ${el.comment} \n`;
 			});
