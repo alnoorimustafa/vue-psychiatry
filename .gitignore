@@ -1,0 +1,42 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore compiled and built files
+dist/
+out/
+
+# Ignore log files
+*.log
+
+# Ignore user-specific IDE and editor files
+.idea/
+.vscode/
+
+# Ignore dependency lock files
+yarn.lock
+package-lock.json
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore production build files for Electron
+/build
+
+# Ignore local environment files (e.g., .env.local, .env.development.local)
+.env*
+
+# Ignore Vue.js build output
+/dist
+
+# Ignore Electron specific files
+electron/node_modules/
+electron/dist/
+electron/out/
+
+# Ignore any other generated or temporary files
+*.bak
+*.tmp
+*.temp
+*.swp
+*.cache
+*.DS_Store?

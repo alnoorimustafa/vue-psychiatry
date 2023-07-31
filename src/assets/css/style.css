@@ -1,0 +1,18 @@
+@font-face {
+  font-family: arabic;
+  src: url(../Fonts/ArabicUIDisplayLight.otf);
+}
+
+.arabic {
+  font-family: arabic;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../Fonts/Rubik.ttf);
+}
+
+* {
+  font-family: Rubik;
+}

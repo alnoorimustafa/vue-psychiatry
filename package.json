@@ -1,0 +1,55 @@
+{
+  "name": "psychiatry",
+  "version": "0.0.0",
+  "author": "mustafa",
+  "main": "electron/electron.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "electron": "wait-on tcp:3000 && cross-env IS_DEV=true electron .",
+    "electron:pack": "electron-builder --dir",
+    "electron:dev": "concurrently -k \"cross-env BROWSER=none yarn dev\" \"yarn electron\"",
+    "electron:builder": "electron-builder",
+    "build:for:electron": "cross-env ELECTRON=true vite build",
+    "app:build": "yarn build:for:electron && yarn electron:builder"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "pouchdb": "^7.2.2",
+    "pouchdb-browser": "^7.2.2",
+    "pouchdb-find": "^7.2.2",
+    "realm-web": "^2.0.0",
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "concurrently": "^6.4.0",
+    "cross-env": "^7.0.3",
+    "electron": "^16.0.1",
+    "electron-builder": "^22.14.5",
+    "vite": "^2.6.4",
+    "wait-on": "^6.0.0"
+  },
+  "build": {
+    "appId": "com.my-website.my-app",
+    "productName": "Psychiatry",
+    "copyright": "Copyright © 2021 Dr.Mustafa Alnoori",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist_electron"
+    }
+  },
+  "license": "MIT"
+}
